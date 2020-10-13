@@ -7,10 +7,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using SistemaInventario.Modelos.ViewModels;
 
-namespace SistemaInventario.Controllers
+namespace SistemaInventario.Areas.inventario.Controllers
 {
+    [Area("inventario")]
     public class HomeController : Controller
     {
+       
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
